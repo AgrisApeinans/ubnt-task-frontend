@@ -1,0 +1,39 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["eslint:recommended", "plugin:react/recommended", "prettier", "prettier/react"],
+    "plugins": ["babel", "prettier", "promise", "react"],
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "globals": {
+        "module": true,
+        "basename": true,
+        "environment": true,
+
+        "React": true,
+        "PropTypes": true,
+        "classNames": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2016,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "prettier/prettier": ["error"],
+        "arrow-body-style": ["error", "as-needed"],
+        "no-var": ["error"],
+        "prefer-const": ["error"],
+        "prefer-template": ["error"],
+        "react/jsx-no-undef": [
+            "error",
+            {
+                "allowGlobals": true
+            }
+        ]
+    }
+}
