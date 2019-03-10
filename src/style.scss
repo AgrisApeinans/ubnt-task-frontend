@@ -1,0 +1,38 @@
+.padding-med {
+    padding: 15px;
+}
+
+.margin-btm-med {
+    margin-bottom: 15px;
+}
+.padding-top-small {
+    padding-top: 10px;
+}
+
+.margin-right-med {
+    margin-right: 15px;
+}
+.align-right {
+    text-align: right;
+}
+
+.full-viewport-height {
+    height: 100vh;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.chat-container {
+    height: 100%;
+
+    .chat-area {
+        height: 70%;
+        overflow-y: auto;
+    }
+}
+
+.break-word {
+    word-break: break-all;
+}

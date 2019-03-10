@@ -5,6 +5,7 @@ const HmtlWebpackPlugin = require('html-webpack-plugin')
 const SRC_DIR = path.resolve(__dirname, 'src')
 const DIST_DIR = path.resolve(__dirname, 'dist')
 const ROOT_DIR = path.resolve(__dirname)
+
 module.exports = {
     entry: {
         app: `${SRC_DIR}/index.js`,
@@ -48,6 +49,7 @@ module.exports = {
             title: 'Ubnt chat',
             template: require('html-webpack-template'),
             inject: false,
+            mobile: true,
             minify: {
                 collapseWhitespace: true,
             },
